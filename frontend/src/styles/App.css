@@ -1,0 +1,121 @@
+/* App.css - Main Application Styles */
+
+.app-background {
+  min-height: 100vh;
+  background: 
+    linear-gradient(135deg, rgba(255, 182, 193, 0.9) 0%, rgba(255, 192, 203, 0.9) 50%, rgba(255, 105, 180, 0.9) 100%),
+    url('https://i.pinimg.com/736x/64/5f/40/645f4034ce36c03a18e0211b0f6728c4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.app-title {
+  text-align: center;
+  color: #8B008B;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  color: #8B008B;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.error {
+  text-align: center;
+  color: #FF1493;
+  font-size: 1.2rem;
+  padding: 2rem;
+  background: rgba(255, 182, 193, 0.2);
+  border-radius: 15px;
+  margin: 1rem 0;
+}
+
+/* Form Styles */
+.form-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #FFB6C1;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-family: "Comic Sans MS", cursive;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: #FF69B4;
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+}
+
+.add-button {
+  background: linear-gradient(45deg, #FF69B4, #FFB6C1);
+  border: none;
+  border-radius: 15px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-family: "Comic Sans MS", cursive;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3);
+}
+
+.add-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+}
+
+.add-button:active {
+  transform: translateY(0);
+}
+
+/* Todo List Styles */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+  }
+  
+  .form-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .task-input {
+    width: 100%;
+  }
+}
