@@ -12,6 +12,3 @@ backend/dist/
 
 # Logs
 *.log
-
-# Node modules and build
-dist/
